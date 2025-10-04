@@ -1,0 +1,40 @@
+/* increases font size and changes font family */
+body {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* changes background color of header and footer */
+header,
+footer {
+    background-color: beige;
+}
+/* changes h1 text color */
+.site-title {
+    color: darkgreen
+}
+/* adds box-shadow to image */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+/* changes list bullet points to squares */
+ul {
+    list-style-type: square;
+}
+/* changes background color of odd list items */
+li:nth-child(odd) {
+    background-color: darkgoldenrod;
+}
+/* changes background color and adds a border to nav links */
+nav>a:link {
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    border: 1px solid black;
+}
+/* changes background color when hovering over nav links */
+nav>a:hover {
+    background-color: aquamarine;
+}
+/* changes background color when focusing on keyboard navigation */
+nav>a:focus {
+    background-color:chartreuse;
+}
