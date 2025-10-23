@@ -31,14 +31,11 @@ nav a:link {
 nav a:visited {
     color: black;
 }
-
-.container{
-  width: 1025px;
-  margin: 0 auto;
-}
-img{
+article img{
   width: 200px;
   float: left;
+  padding:0px 25px 25px 0px;
 }
-
-/* How to specify containers so this doesn't also move the top image? */
+main, footer{
+   padding: 10px; 
+}
