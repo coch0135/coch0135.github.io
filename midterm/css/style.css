@@ -11,6 +11,7 @@ nav ul {
     text-align: center;
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     /* Why doesn't this work to fix the ul list indentation? */
