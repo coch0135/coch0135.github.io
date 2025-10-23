@@ -14,7 +14,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    /* Why doesn't this work to fix the ul list indentation? */
+    /* Why doesn't this work to remove the ul list indentation? */
 }
 nav li {
     display: inline-block;
@@ -31,3 +31,14 @@ nav a:link {
 nav a:visited {
     color: black;
 }
+
+.container{
+  width: 1025px;
+  margin: 0 auto;
+}
+img{
+  width: 200px;
+  float: left;
+}
+
+/* How to specify containers so this doesn't also move the top image? */
