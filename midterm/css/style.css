@@ -12,9 +12,9 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 0;
+    padding-top: 5px;
     margin: 0;
-    /* Why doesn't this work to remove the ul list indentation? */
+    font-size: 1.25em;
 }
 nav li {
     display: inline-block;
@@ -34,8 +34,28 @@ nav a:visited {
 article img{
   width: 200px;
   float: left;
-  padding:0px 25px 25px 0px;
+  padding:0px 15px 15px 0px;
 }
 main, footer{
    padding: 10px; 
+}
+footer{
+   text-align: right;  
+}
+/* https://www.w3schools.com/howto/howto_css_image_text.asp to hover image over text in header */
+header {
+    text-align: center;
+    position:relative;
+}
+h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header img {
+    width: 100%;
 }
