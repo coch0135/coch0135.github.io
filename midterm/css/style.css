@@ -1,12 +1,15 @@
+/* formats body text and background color */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color:#aad4cf;
 }
+/* formats wrapper size and background color */
 .wrapper {
     background-color: #d4e9e7;
     width: 70%;
     margin: 0 auto;
 }
+/* formats navigation list */
 nav ul {
     text-align: center;
     display: flex;
@@ -15,6 +18,7 @@ nav ul {
     padding-top: 5px;
     margin: 0;
     font-size: 1.25em;
+/* formats navigation list item display */
 }
 nav li {
     display: inline-block;
@@ -31,11 +35,13 @@ nav a:link {
 nav a:visited {
     color: black;
 }
+/* floats image beside article paragraph */
 article img{
   width: 200px;
   float: left;
   padding:0px 15px 15px 0px;
 }
+/* formats page footer */
 main, footer{
    padding: 10px; 
 }
@@ -56,9 +62,11 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* makes page header image full width */
 header img {
     width: 100%;
 }
+/* formats form */
 form>div {
     border: 1px solid black;
     padding: 10px;
@@ -75,6 +83,7 @@ form>div div:first-child textarea {
     width: 100%;
     resize: none;
 }
+/* formats form button */
 form>div button {
     background-color: #d4e9e7;
     border: 1px solid black;
