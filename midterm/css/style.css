@@ -9,7 +9,7 @@ body {
     width: 70%;
     margin: 0 auto;
 }
-/* formats navigation list */
+/* formats navigation list text, padding, margin 0 removes indentation and display type */
 nav ul {
     text-align: center;
     display: flex;
@@ -18,16 +18,18 @@ nav ul {
     padding-top: 5px;
     margin: 0;
     font-size: 1.25em;
-/* formats navigation list item display */
 }
+/* formats navigation list item display, inline block puts everything on one line */
 nav li {
     display: inline-block;
 }
+/* adds borders and padding to the second list item */
 nav li:nth-child(2) {
     border-right: 1px solid black;
     border-left: 1px solid black;
     padding: 0px 150px;
 }
+/* keeps the links black with no underline in all states */
 nav a:link {
     text-decoration: none;
     color: black;
@@ -35,16 +37,17 @@ nav a:link {
 nav a:visited {
     color: black;
 }
-/* floats image beside article paragraph */
+/* floats image beside article paragraph and sets width */
 article img{
   width: 200px;
   float: left;
   padding:0px 15px 15px 0px;
 }
-/* formats page footer */
+/* formats page main and footer with padding */
 main, footer{
    padding: 10px; 
 }
+/* aligns footer text to the right */
 footer{
    text-align: right;  
 }
@@ -53,6 +56,7 @@ header {
     text-align: center;
     position:relative;
 }
+/* formats text and positions text over image in header */
 h1 {
     color: white;
     font-size: 3em;
@@ -66,28 +70,30 @@ h1 {
 header img {
     width: 100%;
 }
-/* formats form */
+/* formats form's content minus the header */
 form>div {
     border: 1px solid black;
     padding: 10px;
 }
+/* first div of content adding top and bottom padding, displays all on one line, * means all children of the div */
 form>div div:first-child *{
     display: block;
     padding: 10px 0px;
 }
-/* * means all children of the div */
+/* first div of content input making it take up full horizontal space */
 form>div div:first-child input {
     width: 100%;
 }
+/* first div of content text area making it take up full horizontal space and removes resizing  */
 form>div div:first-child textarea {
     width: 100%;
     resize: none;
 }
-/* formats form button */
+/* formats form button color, border, font, padding, margin */
 form>div button {
     background-color: #d4e9e7;
     border: 1px solid black;
     font-size: 0.6em;
     padding: 10px;
-    margin-top: 10px
+    margin-top: 10px;
 }
