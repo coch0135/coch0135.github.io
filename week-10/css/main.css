@@ -1,0 +1,88 @@
+.row {
+    padding: 1rem;
+    background-color: gainsboro;
+    margin: 0.5rem 0;
+}
+
+.col {
+    background-color: cadetblue;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.mainaxis1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mainaxis2 {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.col1, .col3 {
+    flex-grow: 1;
+}
+
+.col2 {
+    flex-grow: 2;
+}
+
+.mainaxis3 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.mainaxis4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainaxis5 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.crossaxis1 {
+    height: 300px;
+    display: flex;
+}
+
+.crossaxis2 {
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.crossaxis3 {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crossaxis4 {
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.crossaxis5 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.col5 {
+    order: 1;
+}
+
+.col3 {
+    order: 2;
+}
+
+.col7 {
+    order: -1;
+}
