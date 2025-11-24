@@ -217,6 +217,7 @@ nav a:focus {
         flex-direction: row;
         z justify-content: space-around;
     }
+
     .services {
         grid-template-columns: 1fr 1fr;
     }
