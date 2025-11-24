@@ -199,6 +199,11 @@ nav a:focus {
     color: #f6f8fb;
 }
 
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 /* home section */
 .services {
     margin-top: 0.8rem;
@@ -207,18 +212,61 @@ nav a:focus {
     gap: 1rem;
 }
 
-.services {
+.services img, .card img {
     width: 100%;
+}
+
+/* popular destinations grid */
+#destination {
+    margin-top: 0.8rem;
+}
+
+.cards {
+    margin-top: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #938e8e;
+    padding: 0.5rem;
+}
+
+/* .card img {
+    width: 100%;
+} */
+
+.gallery {
+    margin-top: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
 }
 
 /* styles for tablets (anything above 700px */
 @media screen and (min-width:700px) {
     nav ul {
         flex-direction: row;
-        z justify-content: space-around;
+        justify-content: space-around;
     }
 
     .services {
         grid-template-columns: 1fr 1fr;
     }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery h2, .gallery p {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
