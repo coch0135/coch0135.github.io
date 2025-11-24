@@ -199,10 +199,25 @@ nav a:focus {
     color: #f6f8fb;
 }
 
+/* home section */
+.services {
+    margin-top: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.services {
+    width: 100%;
+}
+
 /* styles for tablets (anything above 700px */
 @media screen and (min-width:700px) {
     nav ul {
         flex-direction: row;
         z justify-content: space-around;
+    }
+    .services {
+        grid-template-columns: 1fr 1fr;
     }
 }
