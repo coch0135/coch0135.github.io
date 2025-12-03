@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- links to google fonts icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- links to css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>coch0135 Final Project</title>
 </head>
 
@@ -24,7 +26,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <form action="#">
-                <input id="search" type="text">
+                <!-- adds form input label from HTML feedback -->
+                <div class="offcanvas">
+                    <label for="search">Search</label>
+                </div>
+                <!-- adds placeholder search text per HTML feedback -->
+                <input id="search" type="text" placeholder="Search">
                 <!-- adds magnifying glass icon from google fonts icons -->
                 <button type="submit"> <i class="material-icons">search</i></button>
             </form>
@@ -39,34 +46,43 @@
             <div class="transparent-grey-box">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perspiciatis. Quidem facilis
-                    quia, quis excepturi consequatur voluptate, quaerat at omnis libero inventore, porro illo placeat
+                    quia, quis excepturi consequatur voluptate, quaerat at omnis libero inventore, porro illo
+                    placeat
                     laborum illum eos debitis quibusdam?</p>
                 <!-- adds "button" to style with css -->
                 <a class="button" href="">Connect With Us <i class="material-icons">arrow_right</i></a>
             </div>
         </section>
 
-        <!-- creeates about section -->
+        <!-- creates about section -->
+        <!-- adds wrapper to about section for styling in css per HTML feedback -->
         <section id="about">
-            <img src="images/about-us.jpg" alt="conference room with ping-pong table">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam suscipit, dignissimos atque nemo
-                est facere unde voluptates similique consequatur laborum perspiciatis ut vitae, culpa provident, natus
-                officia minima veniam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempore aperiam, illum unde, ad, facilis
-                veniam provident consequatur at eaque veritatis. Ipsa maiores quis iure quaerat nesciunt delectus
-                dolorum laborum?</p>
+            <div class="wrapper">
+                <img src="images/about-us.jpg" alt="conference room with ping-pong table">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam suscipit, dignissimos atque
+                    nemo
+                    est facere unde voluptates similique consequatur laborum perspiciatis ut vitae, culpa provident,
+                    natus
+                    officia minima veniam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempore aperiam, illum unde, ad,
+                    facilis
+                    veniam provident consequatur at eaque veritatis. Ipsa maiores quis iure quaerat nesciunt
+                    delectus
+                    dolorum laborum?</p>
+            </div>
         </section>
 
-        <!-- creats our services section -->
-        <section id="services">
+        <!-- creates our services section -->
+        <section id="services" class="wrapper">
             <h2>Our Services</h2>
             <div class="cards">
                 <div class="card">
                     <img src="images/digital.jpg" alt="person on phone and computer">
                     <h3>Digital Transformation</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat quidem excepturi nulla
-                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero esse
+                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero
+                        esse
                         repellat culpa odio magnam?</p>
                     <!-- adds "button" to style with css  -->
                     <a class="button" href="#">Digital Plans<i class="material-icons">arrow_right</i></a>
@@ -75,7 +91,8 @@
                     <img src="images/marketing.jpg" alt="laptop screen displaying data graphs">
                     <h3>Marketing</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat quidem excepturi nulla
-                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero esse
+                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero
+                        esse
                         repellat culpa odio magnam?</p>
                     <!-- adds "button" to style with css -->
                     <a class="button" href="#">Marketing Plans<i class="material-icons">arrow_right</i></a>
@@ -84,7 +101,8 @@
                     <img src="images/video.jpg" alt="hand holding a phone screen displaying YouTube logo">
                     <h3>Video Production</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat quidem excepturi nulla
-                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero esse
+                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero
+                        esse
                         repellat culpa odio magnam?</p>
                     <!-- adds "button" to style with css -->
                     <a class="button" href="#">Video Plans<i class="material-icons">arrow_right</i></a>
@@ -93,7 +111,8 @@
                     <img src="images/web.jpg" alt="phone and pen on top of sprial bound graphing paper">
                     <h3>Web Development</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat quidem excepturi nulla
-                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero esse
+                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero
+                        esse
                         repellat culpa odio magnam?</p>
                     <!-- adds "button" to style with css -->
                     <a class="button" href="#">Web Plans<i class="material-icons">arrow_right</i></a>
@@ -103,7 +122,8 @@
                     <img src="images/print.jpg" alt="newspaper dispensers on a city sidewalk">
                     <h3>Print</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, placeat quidem excepturi nulla
-                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero esse
+                        consectetur distinctio est. Perferendis maiores eius dolorem sunt ad, dicta ducimus vero
+                        esse
                         repellat culpa odio magnam?</p>
                     <!-- adds "button" to style with css -->
                     <a class="button" href="#">Print Plans<i class="material-icons">arrow_right</i></a>
@@ -117,7 +137,8 @@
             <!-- adds background image in css -->
             <h3>Our Vision</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, a atque. Recusandae ab, amet
-                possimus excepturi itaque eligendi architecto provident dignissimos quaerat nisi, dicta beatae maxime
+                possimus excepturi itaque eligendi architecto provident dignissimos quaerat nisi, dicta beatae
+                maxime
                 exercitationem eum officia quae.</p>
             <!-- adds "button" to style with css -->
             <a class="button" href="#">Learn More<i class="material-icons">arrow_right</i></a>
@@ -133,8 +154,10 @@
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <hr>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore aperiam,
-                        pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est, totam
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore
+                        aperiam,
+                        pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est,
+                        totam
                         deleniti a itaque accusantium?</p>
                 </div>
                 <div class="bio">
@@ -142,8 +165,10 @@
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <hr>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore aperiam,
-                        pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est, totam
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore
+                        aperiam,
+                        pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est,
+                        totam
                         deleniti a itaque accusantium?</p>
                 </div>
             </div>
@@ -214,7 +239,6 @@
         <p>&copy; Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
     </footer>
-
 </body>
 
 </html>
