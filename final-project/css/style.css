@@ -149,11 +149,11 @@ table {
     right: 200%;
 }
 
-/* Is this for every wrapper, or part of the search bar label formatting? */
-.wrapper {
+/* Wasn't sure what this was for, commented it out Friday after Taro */
+/* .wrapper {
     margin: auto;
     width: 80%;
-}
+} */
 
 /* styles about section */
 #about {
@@ -255,9 +255,17 @@ nav li {
 
 /* after Taro on Friday, work from bottom up */
 
+
+
 footer {
-    background-color: red;
-    color: ;
+    background-color: black;
+    color: rgba(199, 140, 6, 1);
+    margin-left: 0%;
 }
+
+footer a:visited {
+    color: rgba(199, 140, 6, 1);
+}
+
 
 /* If a background goes all the way across the screen, the wrapper class has to be applied to another container inside the section. */
