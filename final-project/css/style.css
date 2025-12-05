@@ -253,7 +253,12 @@ nav li {
 }
 
 
-/* after Taro on Friday, work from bottom up */
+/* after Taro on Friday, worked from bottom up */
+
+#contact h2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
 
 
 
@@ -261,6 +266,9 @@ footer {
     background-color: black;
     color: rgba(199, 140, 6, 1);
     margin-left: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 2;
 }
 
 footer a:visited {
