@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* My CSS starts here, leave the reset alone! */
+/* My CSS starts here */
 
 /* Colours values used in the layout #c78c06, #ffe6ac, #222 and white */
 
@@ -75,30 +75,30 @@ div.card {
     background-color: blue;
 }
 
-/* After Taro on Friday, plug in universal style values */
+/* After Taro on Friday, plugged in universal style values */
 
 h1 {
-    font-size: ;
-    font-weight: ;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: ;
-    font-weight: ;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: ;
-    font-weight: ;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 h4 {
-    font-size ;
-    font-weight: ;
+    font-size 20px;
+    font-weight: bold;
 }
 
 p {
-    font-size ;
+    font-size 16px;
 }
 
 /* styles buttons before specifying which; remove background-color and link color once specific buttons are styled*/
