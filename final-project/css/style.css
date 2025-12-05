@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+/* My CSS starts here, leave the reset alone! */
+
+/* Colours values used in the layout #c78c06, #ffe6ac, #222 and white */
+
 /* formats search bar label per HTML feedback */
 .offcanvas {
     position:relative;
@@ -71,7 +75,90 @@ div.card {
     background-color: blue;
 }
 
+/* After Taro on Friday, plug in universal style values */
+
 h1 {
     font-size: ;
     font-weight: ;
 }
+
+h2 {
+    font-size: ;
+    font-weight: ;
+}
+
+h3 {
+    font-size: ;
+    font-weight: ;
+}
+
+h4 {
+    font-size ;
+    font-weight: ;
+}
+
+p {
+    font-size ;
+}
+
+/* styles buttons before specifying which; remove background-color and link color once specific buttons are styled*/
+.button {
+    padding: 20px;
+    background-color: aqua;
+    font-size: ;
+}
+
+.button i.material-icons {
+    font-size: ;
+}
+
+.button:link,.button:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* styles specific buttons */
+#services .button {
+    background-color: black;
+}
+
+
+/* changes body text to google fonts open sans */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* formats navigation list */
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 1.25em;
+}
+/* c/p from midterm: formats navigation list item display, inline block puts everything on one line */
+nav li {
+    display: inline-block;
+}
+
+/* formats banner image */
+#banner {
+    /* .. means back out of css file folder */
+    background-image: url("../images/main-banner.jpg");
+}
+
+.transparent-grey-box {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: white;
+    padding: ;
+    /* padding values in px top right bottom left */
+}
+
+
+/* after Taro on Friday, work from bottom up */
+
+footer {
+    background-color: red;
+    color: ;
+}
+
+/* If a background goes all the way across the screen, the wrapper class has to be applied to another container inside the section. */
