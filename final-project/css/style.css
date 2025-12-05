@@ -4,48 +4,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* My CSS starts here */
@@ -54,31 +141,33 @@ table {
 
 /* formats search bar label per HTML feedback */
 .offcanvas {
-    position:relative;
+    position: relative;
 }
 
-.offcanvas > label {
+.offcanvas>label {
     position: absolute;
     right: 200%;
 }
 
+/* Is this for every wrapper, or part of the search bar label formatting? */
 .wrapper {
     margin: auto;
     width: 80%;
 }
 
+/* styles about section */
 #about {
-    background-color: aquamarine;
+    background-color: rgba(255, 230, 172, 1);
 }
 
+/* styles services cards */
 div.card {
-    background-color: blue;
+    background-color: rgba(255, 230, 172, 1);
 }
 
 /* After Taro on Friday, plugged in universal style values */
-
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -101,18 +190,27 @@ p {
     font-size 16px;
 }
 
-/* styles buttons before specifying which; remove background-color and link color once specific buttons are styled*/
+/* styles buttons universally; remove background-color and link color after styling specific buttons*/
 .button {
-    padding: 20px;
-    background-color: aqua;
-    font-size: ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(199, 140, 6, 1);
+    font-size: 20px;
+    /* Why does "color:black" not change button font color to black? */
+    color: black;
 }
 
+/* styles triangle icons in buttons universally */
 .button i.material-icons {
-    font-size: ;
+    font-size: 2em;
+    /* Why does "padding-top: 20px" not move the triangles down to align with button text? */
+    padding-top: 20px;
 }
 
-.button:link,.button:visited {
+.button:link,
+.button:visited {
     text-decoration: none;
     color: white;
 }
@@ -122,11 +220,11 @@ p {
     background-color: black;
 }
 
-
 /* changes body text to google fonts open sans */
 body {
     font-family: "Open Sans", sans-serif;
 }
+
 /* formats navigation list */
 nav ul {
     text-align: center;
@@ -135,6 +233,7 @@ nav ul {
     margin: 0;
     font-size: 1.25em;
 }
+
 /* c/p from midterm: formats navigation list item display, inline block puts everything on one line */
 nav li {
     display: inline-block;
