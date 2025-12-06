@@ -164,7 +164,7 @@ div.card {
     background-color: rgba(255, 230, 172, 1);
 }
 
-/* After Taro on Friday, plugged in universal style values */
+/* after css reset, creates universal style values */
 h1 {
     font-size: 70px;
     font-weight: bold;
@@ -197,8 +197,6 @@ p {
     padding-right: 10px;
     background-color: rgba(199, 140, 6, 1);
     font-size: 20px;
-    /* Why does "color:black" not change button font color to black? */
-    color: black;
 }
 
 /* styles triangle icons in buttons universally */
@@ -223,6 +221,38 @@ p {
     background-image: linear-gradient(to right, #0f1828, #16314d);
 }
 
+#banner .button {
+    color: black;
+}
+
+/* Why is the SEND button not displaying style changes? */
+#contact .button {
+    background-color: black;
+    color: rgba(199, 140, 6, 1);
+    font-weight: bold;
+}
+
+/* How to make this color stop after "Home" with the other list items on a black background? */
+#home {
+    background-color: rgba(199, 140, 6, 1);
+}
+
+
+#contact form {
+    /* Reference midterm? */
+}
+
+/* formats hours of operation table in contact section */
+#contact th, td {
+    border: 1px solid;
+    padding: 10px;
+    width: 500px;
+}
+
+#contact th {
+    background-color:  rgba(255, 230, 172, 1);
+}
+
 /* changes body text to google fonts open sans */
 body {
     font-family: "Open Sans", sans-serif;
@@ -237,10 +267,10 @@ nav ul {
     font-size: 1.25em;
 }
 
-/* c/p from midterm: formats navigation list item display, inline block puts everything on one line */
-nav li {
+/* formats navigation list item display */
+/* nav li {
     display: inline-block;
-}
+} */
 
 /* formats banner image */
 #banner {
@@ -254,18 +284,15 @@ nav li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 50px 0px;
+    /* padding: 20px 0px; */
 }
 
 .transparent-grey-box {
     background-color: rgba(34, 34, 34, 0.5);
     color: white;
-    padding: ;
+    padding: 100px;
     /* padding values in px top right bottom left */
 }
-
-
-/* after Taro on Friday, worked from bottom up */
 
 #contact h2 {
     padding-top: 1.5em;
@@ -273,6 +300,12 @@ nav li {
 }
 
 #contact h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact {
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -289,6 +322,3 @@ footer a:link,
 footer a:visited {
     color: rgba(199, 140, 6, 1);
 }
-
-
-/* If a background goes all the way across the screen, the wrapper class has to be applied to another container inside the section. */
