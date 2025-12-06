@@ -24,9 +24,12 @@
 
             <!-- adds navigation -->
             <nav>
+                <!-- adds div wrapper to logo and home for css styling -->
+                <div class="wrapper">
                 <img src="images/logo.png" alt="Three Star Media logo">
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    </div>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
@@ -143,14 +146,14 @@
 
         <section id="vision">
             <div class="wrapper">
-            <!-- adds background image in css -->
-            <h3>Our Vision</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, a atque. Recusandae ab, amet
-                possimus excepturi itaque eligendi architecto provident dignissimos quaerat nisi, dicta beatae
-                maxime
-                exercitationem eum officia quae.</p>
-            <!-- adds "button" to style with css -->
-            <a class="button" href="#">Learn More<i class="material-icons">arrow_right</i></a>
+                <!-- adds background image in css -->
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, a atque. Recusandae ab, amet
+                    possimus excepturi itaque eligendi architecto provident dignissimos quaerat nisi, dicta beatae
+                    maxime
+                    exercitationem eum officia quae.</p>
+                <!-- adds "button" to style with css -->
+                <a class="button" href="#">Learn More<i class="material-icons">arrow_right</i></a>
             </div>
         </section>
 
@@ -190,23 +193,20 @@
             <!-- creates contact form -->
             <form action="#" method="post">
                 <h3>Send us a message</h3>
-                <!-- adds div within form to add border in css -->
-                <div>
-                    <!-- adds div for text response items -->
-                    <div>
-                        <!-- adds text response items with label pairs -->
-                        <label for="Name">Full Name</label>
-                        <input id="Name" type="text">
 
-                        <label for="Email">Email</label>
-                        <input id="Email" type="email">
 
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5"></textarea>
-                    </div>
-                    <!-- creates SEND botton -->
-                    <button type="submit">Send</button>
-                </div>
+                <!-- adds text response items with label pairs -->
+                <label for="Name">Full Name</label>
+                <input id="Name" type="text">
+
+                <label for="Email">Email</label>
+                <input id="Email" type="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5"></textarea>
+
+                <!-- creates SEND botton -->
+                <button type="submit">Send</button>
             </form>
 
             <!-- adds table with hours of operation -->
@@ -237,7 +237,7 @@
                 <h3>Location</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.950174931716!2d-75.75790842380947!3d45.34981804106342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764359117403!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>

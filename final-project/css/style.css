@@ -159,9 +159,23 @@ table {
     background-color: rgba(255, 230, 172, 1);
 }
 
+#about img, #services img, #team img {
+    width: 100%;
+}
+
+section {
+    padding: 50px 0px;
+}
+
 /* styles services cards */
 div.card {
     background-color: rgba(255, 230, 172, 1);
+    padding-bottom: 20px;
+}
+
+#services div.cards {
+    display: grid;
+    gap: 20px;
 }
 
 /* after css reset, creates universal style values */
@@ -189,13 +203,12 @@ p {
     font-size 16px;
 }
 
-/* styles buttons universally; remove background-color and link color after styling specific buttons*/
+/* styles buttons universally */
 .button {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: rgba(199, 140, 6, 1);
     font-size: 20px;
 }
 
@@ -225,37 +238,36 @@ p {
     color: black;
 }
 
-/* Why is the SEND button not displaying style changes? */
-#contact .button {
+#contact button {
     background-color: black;
     color: rgba(199, 140, 6, 1);
     font-weight: bold;
 }
 
-/* How to make this color stop after "Home" with the other list items on a black background? */
+/* styles home section with nav menu */
+
 #home {
+    background-color: #222;
+}
+
+/* styles nav links universally */
+#home nav a:link, #home nav a:visited {
+    color: rgba(199, 140, 6, 1);
+    text-decoration: none;
+}
+
+/* styles home nav link */
+#home nav li:first-child a:link, #home nav li:first-child a:visited {
+    color: #222;
+}
+
+/* styles home nav li */
+#home nav li:first-child {
     background-color: rgba(199, 140, 6, 1);
 }
 
-
-#contact form {
-    /* Reference midterm? */
-}
-
-/* formats hours of operation table in contact section */
-#contact th, td {
-    border: 1px solid;
-    padding: 10px;
-    width: 500px;
-}
-
-#contact th {
-    background-color:  rgba(255, 230, 172, 1);
-}
-
-/* changes body text to google fonts open sans */
-body {
-    font-family: "Open Sans", sans-serif;
+#home nav li {
+    padding: 30px 0px;
 }
 
 /* formats navigation list */
@@ -272,10 +284,40 @@ nav ul {
     display: inline-block;
 } */
 
+/* adds goldenrod background color to logo/home wrapper */
+#home nav .wrapper {
+    background-color: rgba(199, 140, 6, 1);
+}
+
+/* styles contact form */
+#contact form * {
+    display: block;
+}
+
+/* styles hours of operation table in contact section */
+#contact th, td {
+    border: 1px solid;
+    padding: 10px;
+    width: 500px;
+}
+
+#contact th {
+    background-color:  rgba(255, 230, 172, 1);
+}
+
+/* changes body text to google fonts open sans */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
 /* formats banner image */
 #banner {
     /* .. means back out of css file folder */
     background-image: url("../images/main-banner.jpg");
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
 }
 
 #vision {
@@ -290,7 +332,7 @@ nav ul {
 .transparent-grey-box {
     background-color: rgba(34, 34, 34, 0.5);
     color: white;
-    padding: 100px;
+    padding: 50px 5px;
     /* padding values in px top right bottom left */
 }
 
@@ -310,7 +352,7 @@ nav ul {
 }
 
 footer {
-    background-color: black;
+    background-color: #222;
     color: rgba(199, 140, 6, 1);
     margin-left: 0%;
     padding-top: 20px;
@@ -321,4 +363,14 @@ footer {
 footer a:link,
 footer a:visited {
     color: rgba(199, 140, 6, 1);
+}
+
+/* styles for desktop */
+
+@media screen and (min-width: 760px) {
+    /* all media queries go in here */
+    #services div.cards {
+        /* change to actual size, reference grid assignment */
+        grid-template-columns: 1fr 1fr;
+    }
 }
