@@ -19,28 +19,31 @@
 <body>
 
     <header id="home">
+        <!-- adds wrapper for header section styling in css -->
+        <div class="wrapper">
 
-        <!-- adds navigation -->
-        <nav>
-            <img src="images/logo.png" alt="Three Star Media logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <form action="#">
-                <!-- adds form input label from HTML feedback -->
-                <div class="offcanvas">
-                    <label for="search">Search</label>
-                </div>
-                <!-- adds placeholder search text per HTML feedback -->
-                <input id="search" type="text" placeholder="Search">
-                <!-- adds magnifying glass icon from google fonts icons -->
-                <button type="submit"> <i class="material-icons">search</i></button>
-            </form>
-        </nav>
+            <!-- adds navigation -->
+            <nav>
+                <img src="images/logo.png" alt="Three Star Media logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <form action="#">
+                    <!-- adds form input label from HTML feedback -->
+                    <div class="offcanvas">
+                        <label for="search">Search</label>
+                    </div>
+                    <!-- adds placeholder search text per HTML feedback -->
+                    <input id="search" type="text" placeholder="Search">
+                    <!-- adds magnifying glass icon from google fonts icons -->
+                    <button type="submit"> <i class="material-icons">search</i></button>
+                </form>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -139,6 +142,7 @@
         </section>
 
         <section id="vision">
+            <div class="wrapper">
             <!-- adds background image in css -->
             <h3>Our Vision</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, a atque. Recusandae ab, amet
@@ -147,10 +151,11 @@
                 exercitationem eum officia quae.</p>
             <!-- adds "button" to style with css -->
             <a class="button" href="#">Learn More<i class="material-icons">arrow_right</i></a>
+            </div>
         </section>
 
         <!-- adds our team section -->
-        <section id="team">
+        <section id="team" class="wrapper">
             <h2>Our Team</h2>
             <!-- adds bio cards for team section -->
             <div class="bios">
@@ -180,7 +185,7 @@
         </section>
 
         <!-- creates contact form -->
-        <section id="contact">
+        <section id="contact" class="wrapper">
             <h2>Contact Us</h2>
             <!-- creates contact form -->
             <form action="#" method="post">
@@ -230,7 +235,6 @@
             <!-- adds embedded map -->
             <div>
                 <h3>Location</h3>
-                <!-- Do the embedded width and height values need to be adjusted? -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.950174931716!2d-75.75790842380947!3d45.34981804106342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764359117403!5m2!1sen!2sca"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"

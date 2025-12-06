@@ -149,11 +149,10 @@ table {
     right: 200%;
 }
 
-/* Wasn't sure what this was for, commented it out Friday after Taro */
-/* .wrapper {
+.wrapper {
     margin: auto;
     width: 80%;
-} */
+}
 
 /* styles about section */
 #about {
@@ -205,8 +204,7 @@ p {
 /* styles triangle icons in buttons universally */
 .button i.material-icons {
     font-size: 2em;
-    /* Why does "padding-top: 20px" not move the triangles down to align with button text? */
-    padding-top: 20px;
+    /* unable to move the triangles down to be in-line with text */
 }
 
 .button:link,
@@ -218,6 +216,11 @@ p {
 /* styles specific buttons */
 #services .button {
     background-color: black;
+}
+
+#vision .button {
+    border: 2px solid rgba(199, 140, 6, 1);
+    background-image: linear-gradient(to right, #0f1828, #16314d);
 }
 
 /* changes body text to google fonts open sans */
@@ -245,6 +248,15 @@ nav li {
     background-image: url("../images/main-banner.jpg");
 }
 
+#vision {
+    background-image: url("../images/vision.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0px;
+}
+
 .transparent-grey-box {
     background-color: rgba(34, 34, 34, 0.5);
     color: white;
@@ -264,12 +276,6 @@ nav li {
     padding-bottom: 20px;
 }
 
-/* formats location subsection of contact section */
-
-/* formats location subsection of contact section */
-
-/* formats location subsection of contact section */
-
 footer {
     background-color: black;
     color: rgba(199, 140, 6, 1);
@@ -279,6 +285,7 @@ footer {
     line-height: 2;
 }
 
+footer a:link,
 footer a:visited {
     color: rgba(199, 140, 6, 1);
 }
