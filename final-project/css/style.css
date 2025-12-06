@@ -256,11 +256,19 @@ nav li {
 /* after Taro on Friday, worked from bottom up */
 
 #contact h2 {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
+#contact h3 {
+    padding-bottom: 20px;
+}
 
+/* formats location subsection of contact section */
+
+/* formats location subsection of contact section */
+
+/* formats location subsection of contact section */
 
 footer {
     background-color: black;
