@@ -248,6 +248,7 @@ p {
 
 #home {
     background-color: #222;
+    padding: 15px 0px;
 }
 
 /* styles nav links universally */
@@ -257,13 +258,13 @@ p {
 }
 
 /* styles home nav link */
-#home nav li:first-child a:link, #home nav li:first-child a:visited {
+#home nav .goldenrod li:nth-child(2) a:link, #home nav .goldenrod li:nth-child(2) a:visited {
     color: #222;
 }
 
-/* styles home nav li */
-#home nav li:first-child {
-    background-color: rgba(199, 140, 6, 1);
+/* styles logo image as a list item */
+#home nav .goldenrod li:first-child {
+    text-align: left;
 }
 
 #home nav li {
@@ -279,14 +280,28 @@ nav ul {
     font-size: 1.25em;
 }
 
-/* formats navigation list item display */
-/* nav li {
-    display: inline-block;
-} */
-
 /* adds goldenrod background color to logo/home wrapper */
-#home nav .wrapper {
+#home nav .goldenrod {
     background-color: rgba(199, 140, 6, 1);
+}
+
+/* styles search form */
+#home form button {
+    background-color: #222;
+    border-color: rgba(199, 140, 6, 1);
+    border-width: 3px;
+}
+
+#home form i.material-icons {
+    color: rgba(199, 140, 6, 1);
+}
+
+#home form input#search {
+   flex-grow: 2;
+}
+
+#home form .search-form {
+    display: flex;
 }
 
 /* styles contact form */

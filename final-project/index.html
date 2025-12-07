@@ -25,10 +25,10 @@
             <!-- adds navigation -->
             <nav>
                 <!-- adds div wrapper to logo and home for css styling -->
-                <div class="wrapper">
-                <img src="images/logo.png" alt="Three Star Media logo">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <div class="goldenrod">
+                        <li><img src="images/logo.png" alt="Three Star Media logo"></li>
+                        <li><a href="#home">Home</a></li>
                     </div>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
@@ -40,10 +40,13 @@
                     <div class="offcanvas">
                         <label for="search">Search</label>
                     </div>
-                    <!-- adds placeholder search text per HTML feedback -->
-                    <input id="search" type="text" placeholder="Search">
-                    <!-- adds magnifying glass icon from google fonts icons -->
-                    <button type="submit"> <i class="material-icons">search</i></button>
+                    <!-- wraps search bar and icon for css styling -->
+                    <div class="search-form">
+                        <!-- adds placeholder search text per HTML feedback -->
+                        <input id="search" type="text" placeholder="Search">
+                        <!-- adds magnifying glass icon from google fonts icons -->
+                        <button type="submit"> <i class="material-icons">search</i></button>
+                    </div>
                 </form>
             </nav>
         </div>
