@@ -141,12 +141,7 @@ table {
 
 /* formats search bar label per HTML feedback */
 .offcanvas {
-    position: relative;
-}
-
-.offcanvas>label {
-    position: absolute;
-    right: 200%;
+    display: none;
 }
 
 .wrapper {
@@ -159,7 +154,9 @@ table {
     background-color: rgba(255, 230, 172, 1);
 }
 
-#about img, #services img, #team img {
+#about img,
+#services img,
+#team img {
     width: 100%;
 }
 
@@ -245,10 +242,12 @@ p {
     background-color: rgba(199, 140, 6, 1);
 }
 
-#contact button {
+#contact form button {
     background-color: black;
     color: rgba(199, 140, 6, 1);
     font-weight: bold;
+    margin-top: 20px;
+    padding: 5px;
 }
 
 /* styles home section with nav menu */
@@ -259,13 +258,15 @@ p {
 }
 
 /* styles nav links universally */
-#home nav a:link, #home nav a:visited {
+#home nav a:link,
+#home nav a:visited {
     color: rgba(199, 140, 6, 1);
     text-decoration: none;
 }
 
 /* styles home nav link */
-#home nav .goldenrod li:nth-child(2) a:link, #home nav .goldenrod li:nth-child(2) a:visited {
+#home nav .goldenrod li:nth-child(2) a:link,
+#home nav .goldenrod li:nth-child(2) a:visited {
     color: #222;
 }
 
@@ -304,7 +305,7 @@ nav ul {
 }
 
 #home form input#search {
-   flex-grow: 2;
+    flex-grow: 2;
 }
 
 #home form .search-form {
@@ -314,9 +315,11 @@ nav ul {
 /* styles contact form */
 #contact form * {
     display: block;
+    padding: 10px 0px;
 }
 
-#contact form input, #contact form textarea {
+#contact form input,
+#contact form textarea {
     width: 100%;
     resize: none;
 }
@@ -326,14 +329,15 @@ nav ul {
 }
 
 /* styles hours of operation table in contact section */
-#contact th, td {
+#contact th,
+td {
     border: 1px solid;
     padding: 10px;
     width: 500px;
 }
 
 #contact th {
-    background-color:  rgba(255, 230, 172, 1);
+    background-color: rgba(255, 230, 172, 1);
 }
 
 /* changes body text to google fonts open sans */
@@ -400,8 +404,101 @@ footer a:visited {
 
 @media screen and (min-width: 760px) {
     /* all media queries go in here */
-    #services div.cards {
-        /* change to actual size, reference grid assignment */
+
+    /* removes gap between bios */
+    #team div.bios {
+        gap: 0px;
+    }
+
+    /* displays individual bio cards as two column grid */
+    #team div.bios div.bio {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /* formats bio card positions */
+    #team div.bios div.bio:nth-child(2) img {
+        grid-column: 2;
+    }
+
+    #team div.bios div.bio:nth-child(2) div {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    /*  */
+    #contact>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #contact>div>div:nth-child(3) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #contact>div>div:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    #contact form {
+        ;
+    }
+
+    /* formats services cards */
+    #services div.cards {
+        /* change to actual size, reference grid assignment */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #services div.cards>.card:nth-child(1) {
+        flex-basis: calc(50% - (20px/2));
+    }
+
+    #services div.cards>.card:nth-child(2) {
+        flex-basis: calc(50% - (20px/2));
+    }
+
+    #services div.cards>.card:nth-child(3) {
+        flex-basis: calc(33% - (40px/3));
+    }
+
+    #services div.cards>.card:nth-child(4) {
+        flex-basis: calc(33% - (40px/3));
+    }
+
+    #services div.cards>.card:nth-child(5) {
+        flex-basis: calc(33% - (40px/3));
+    }
+
+    /* formats header */
+    #home ul,
+    div.goldenrod {
+        display: flex;
+        align-items: center;
+    }
+
+    #home ul li {
+        padding: 10px 20px;
+    }
+
+    #home nav div.goldenrod {
+        background-color: rgba(255, 230, 172, 0.0);
+        gap: 30px;
+    }
+
+    #home nav div.goldenrod li {
+        background-color: rgba(199, 140, 6, 1);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }

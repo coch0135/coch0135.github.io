@@ -167,25 +167,29 @@
             <div class="bios">
                 <div class="bio">
                     <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore
-                        aperiam,
-                        pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est,
-                        totam
-                        deleniti a itaque accusantium?</p>
+                    <div>
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore
+                            aperiam,
+                            pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est,
+                            totam
+                            deleniti a itaque accusantium?</p>
+                    </div>
                 </div>
                 <div class="bio">
                     <img src="images/bob.jpg" alt="Bob Rite">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore
-                        aperiam,
-                        pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est,
-                        totam
-                        deleniti a itaque accusantium?</p>
+                    <div>
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo sapiente, labore
+                            aperiam,
+                            pariatur minima praesentium veritatis corrupti magni, ex nesciunt! Facilis aut autem est,
+                            totam
+                            deleniti a itaque accusantium?</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,55 +197,60 @@
         <!-- creates contact section -->
         <section id="contact" class="wrapper">
             <h2>Contact Us</h2>
-            <!-- creates contact form -->
-            <form action="#" method="post">
-                <h3>Send us a message</h3>
-
-
-                <!-- adds text response items with label pairs -->
-                <label for="Name">Full Name</label>
-                <input id="Name" type="text">
-
-                <label for="Email">Email</label>
-                <input id="Email" type="email">
-
-                <label for="message">Message</label>
-                <textarea id="message" rows="5"></textarea>
-
-                <!-- creates SEND botton -->
-                <button type="submit">Send</button>
-            </form>
-
-            <!-- adds table with hours of operation -->
+            <!-- creates div for contact form, table, and location -->
             <div>
-                <h3>Hours of operation</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9AM - 6PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <!-- creates div for contact form styling in css -->
+                <div>
+                    <!-- creates contact form -->
+                    <form action="#" method="post">
+                        <h3>Send us a message</h3>
 
-            <!-- adds embedded map -->
-            <div>
-                <h3>Location</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.950174931716!2d-75.75790842380947!3d45.34981804106342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764359117403!5m2!1sen!2sca"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <!-- adds text response items with label pairs -->
+                        <label for="Name">Full Name</label>
+                        <input id="Name" type="text">
+
+                        <label for="Email">Email</label>
+                        <input id="Email" type="email">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5"></textarea>
+
+                        <!-- creates SEND botton -->
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <!-- adds table with hours of operation -->
+                <div>
+                    <h3>Hours of operation</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- adds embedded map -->
+                <div>
+                    <h3>Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.950174931716!2d-75.75790842380947!3d45.34981804106342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764359117403!5m2!1sen!2sca"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
 
