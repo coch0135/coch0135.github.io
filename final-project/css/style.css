@@ -394,6 +394,10 @@ div.card {
     resize: none;
 }
 
+#contact iframe {
+    width: 100%;
+}
+
 /* styles table in contact section */
 #contact th,
 td {
