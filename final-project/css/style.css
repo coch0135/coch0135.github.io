@@ -252,8 +252,8 @@ a.button {
 }
 
 /* styles home nav link */
-#home nav .goldenrod li:nth-child(2) a:link,
-#home nav .goldenrod li:nth-child(2) a:visited {
+#home nav li.goldenrod a:link,
+#home nav li.goldenrod a:visited {
     color: #222;
 }
 
@@ -271,7 +271,6 @@ a.button {
 nav ul {
     text-align: center;
     list-style-type: none;
-    padding-top: 5px;
     margin: 0;
     font-size: 1.25em;
 }
