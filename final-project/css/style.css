@@ -141,25 +141,31 @@ table {
 h1 {
     font-size: 70px;
     font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 h2 {
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 h4 {
-    font-size 20px;
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size 16px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .wrapper {
@@ -167,18 +173,24 @@ p {
     width: 80%;
 }
 
+hr {
+    border-top: 2px solid rgba(199, 140, 6, 1);
+}
+
+
 /* changes body text to google fonts open sans */
 body {
     font-family: "Open Sans", sans-serif;
 }
 
 /* styles buttons universally */
-.button {
+a.button {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 20px;
+    /* unable to add vertical margins */
 }
 
 /* styles triangle icons in buttons universally */
@@ -192,6 +204,11 @@ body {
     text-decoration: none;
     color: white;
 }
+
+/* adds margin below paragraphs because button margins weren't working */
+#services div.card div p, #banner div.transparent-grey-box p, #vision div p {
+    margin-bottom: 20px;
+} 
 
 /* styles specific buttons */
 #services .button {
@@ -326,6 +343,10 @@ div.card {
     gap: 20px;
 }
 
+#services div.card div {
+    padding: 20px;
+}
+
 /* styles VISION section */
 
 /* styles vision section image */
@@ -349,6 +370,10 @@ div.card {
 #team div.bios {
     display: grid;
     gap: 20px;
+}
+
+#team .bio div {
+    padding: 15px 10px;
 }
 
 /* styles CONTACT section */
@@ -379,16 +404,6 @@ td {
 
 #contact th {
     background-color: rgba(255, 230, 172, 1);
-}
-
-#contact h2 {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-}
-
-#contact h3 {
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 /* styles FOOTER section */
@@ -432,7 +447,6 @@ footer a:visited {
         grid-row: 1;
     }
 
-    /*  */
     #contact>div {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -447,10 +461,6 @@ footer a:visited {
     #contact>div>div:nth-child(2) {
         grid-row: 2;
         grid-column: 1 / span 2;
-    }
-
-    #contact form {
-        ;
     }
 
     /* formats services cards */
