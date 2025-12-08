@@ -137,50 +137,6 @@ table {
 
 /* My CSS starts here */
 
-/* Colours values used in the layout #c78c06, #ffe6ac, #222 and white */
-
-/* formats search bar label per HTML feedback */
-.offcanvas {
-    display: none;
-}
-
-.wrapper {
-    margin: auto;
-    width: 80%;
-}
-
-/* styles about section */
-#about {
-    background-color: rgba(255, 230, 172, 1);
-}
-
-#about img,
-#services img,
-#team img {
-    width: 100%;
-}
-
-section {
-    padding: 50px 0px;
-}
-
-/* styles services cards */
-div.card {
-    background-color: rgba(255, 230, 172, 1);
-    padding-bottom: 20px;
-}
-
-#services div.cards {
-    display: grid;
-    gap: 20px;
-}
-
-/* styles bio cards container */
-#team div.bios {
-    display: grid;
-    gap: 20px;
-}
-
 /* after css reset, creates universal style values */
 h1 {
     font-size: 70px;
@@ -204,6 +160,16 @@ h4 {
 
 p {
     font-size 16px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+/* changes body text to google fonts open sans */
+body {
+    font-family: "Open Sans", sans-serif;
 }
 
 /* styles buttons universally */
@@ -250,11 +216,15 @@ p {
     padding: 5px;
 }
 
-/* styles home section with nav menu */
-
+/* styles HOME section with nav menu */
 #home {
     background-color: #222;
     padding: 15px 0px;
+}
+
+/* formats search bar label per HTML feedback */
+.offcanvas {
+    display: none;
 }
 
 /* styles nav links universally */
@@ -275,6 +245,7 @@ p {
     text-align: left;
 }
 
+/* adds padding to navigation list items */
 #home nav li {
     padding: 30px 0px;
 }
@@ -312,7 +283,81 @@ nav ul {
     display: flex;
 }
 
-/* styles contact form */
+/* styles BANNER section */
+#banner {
+    /* .. means back out of css file folder */
+    background-image: url("../images/main-banner.jpg");
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+.transparent-grey-box {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: white;
+    padding: 50px 5px;
+}
+
+/* styles ABOUT section */
+#about {
+    background-color: rgba(255, 230, 172, 1);
+}
+
+#about img,
+#services img,
+#team img {
+    width: 100%;
+}
+
+section {
+    padding: 50px 0px;
+}
+
+/* styles SERVICES section */
+
+/* styles services cards */
+div.card {
+    background-color: rgba(255, 230, 172, 1);
+    padding-bottom: 20px;
+}
+
+#services div.cards {
+    display: grid;
+    gap: 20px;
+}
+
+/* styles VISION section */
+
+/* styles vision section image */
+#vision {
+    background-image: url("../images/vision.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding: 20px 0px; */
+}
+
+/* styles TEAM section */
+
+/* styles team section member bios */
+#team .bio {
+    background-color: rgba(255, 230, 172, 1);
+}
+
+/* styles bio cards container */
+#team div.bios {
+    display: grid;
+    gap: 20px;
+}
+
+/* styles CONTACT section */
+#contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* styles form in contact section */
 #contact form * {
     display: block;
     padding: 10px 0px;
@@ -324,11 +369,7 @@ nav ul {
     resize: none;
 }
 
-#team .bio {
-    background-color: rgba(255, 230, 172, 1);
-}
-
-/* styles hours of operation table in contact section */
+/* styles table in contact section */
 #contact th,
 td {
     border: 1px solid;
@@ -338,37 +379,6 @@ td {
 
 #contact th {
     background-color: rgba(255, 230, 172, 1);
-}
-
-/* changes body text to google fonts open sans */
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
-
-/* formats banner image */
-#banner {
-    /* .. means back out of css file folder */
-    background-image: url("../images/main-banner.jpg");
-    padding: 50px 0px;
-    background-size: cover;
-    background-position: center;
-}
-
-#vision {
-    background-image: url("../images/vision.jpg");
-    color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* padding: 20px 0px; */
-}
-
-.transparent-grey-box {
-    background-color: rgba(34, 34, 34, 0.5);
-    color: white;
-    padding: 50px 5px;
-    /* padding values in px top right bottom left */
 }
 
 #contact h2 {
@@ -381,11 +391,7 @@ body {
     padding-bottom: 20px;
 }
 
-#contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
+/* styles FOOTER section */
 footer {
     background-color: #222;
     color: rgba(199, 140, 6, 1);
