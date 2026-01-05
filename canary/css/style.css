@@ -136,3 +136,43 @@ table {
 }
 
 /* My CSS starts here */
+
+/* after css reset, creates universal style values */
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+hr {
+    border-top: 2px solid rgba(199, 140, 6, 1);
+}
