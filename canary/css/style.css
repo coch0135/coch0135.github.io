@@ -167,12 +167,3 @@ p {
     font-size: 16px;
     margin-bottom: 5px;
 }
-
-.wrapper {
-    margin: auto;
-    width: 80%;
-}
-
-hr {
-    border-top: 2px solid rgba(199, 140, 6, 1);
-}
